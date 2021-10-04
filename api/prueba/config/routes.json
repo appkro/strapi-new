@@ -1,17 +1,8 @@
 {
-  "routes": [
-    {
+  "routes": [{
       "method": "GET",
       "path": "/pruebas",
       "handler": "prueba.find",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/pruebas/lol",
-      "handler": "prueba.findOneO",
       "config": {
         "policies": []
       }
@@ -52,6 +43,14 @@
       "method": "DELETE",
       "path": "/pruebas/:id",
       "handler": "prueba.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pruebas/lol",
+      "handler": "prueba.index",
       "config": {
         "policies": []
       }
