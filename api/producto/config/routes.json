@@ -5,7 +5,7 @@
       "path": "/productos",
       "handler": "producto.find",
       "config": {
-        "policies": []
+        "policies": ["plugins::users-permissions.isAuthenticated"]
       }
     },
     {
@@ -13,7 +13,7 @@
       "path": "/productos/me",
       "handler": "producto.findMe",
       "config": {
-        "policies": []
+        "policies": ["plugins::users-permissions.isAuthenticated"]
       }
     },
     {
